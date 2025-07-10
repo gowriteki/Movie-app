@@ -110,27 +110,6 @@ resetForm(){
         mname:'',mtype:'',mdesc:'',isUpdate:false
     });
 }
-// deleteMovie(id) {
-//   fetch('http://localhost:8000/movie/delete/' + id, {
-//     method: 'DELETE'
-//   })
-//   .then(response => response.json())
-  
-
-//   .then(() => {
-   
-//     this.setState({
-   
-//     //   id: '',
-//     //   mname: '',
-//     //   mtype: '',
-//     //   mdesc: '',
-//       isUpdate: true
-//     });
-//     console.log('Movie deleted');
-//   })
-//   .catch(err => console.log('Error:', err));
-// }
     deleteMovie() {
    //console('hi');
         fetch('http://localhost:8000/movie/delete/' + this.state.id, {
