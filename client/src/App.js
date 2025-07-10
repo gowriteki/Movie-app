@@ -1,30 +1,3 @@
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
-// import Menubar from "./menubar";
-// import AddMovie from "./addmovie";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Link,Routes,Route} from 'react-router-dom';
 import AddMovie from './addmovie';
@@ -41,8 +14,7 @@ function App()
   const[location,setLocation]=useState('Bangalore');// Assuming
   const updateLocation = (newLocation)=>{
     setLocation(newLocation); // after u making any function call it will be rerender
-  }
- 
+  } 
   return (
     <LocationContext.Provider value={{location,updateLocation}}>
   <div>
@@ -71,22 +43,7 @@ function App()
         <li class="nav-item">
         <Link class="nav-link " to="/contact">Contact</Link>
       </li>
-{/* 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-        <li class="nav-item">
-        <link class="nav-link">disabled</link>
-      </li>
-     */}
-    
+
     <form class="form-inline my-2 my-lg-0">
       {/* <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/> */}
       <Link to="/login" class="btn btn-outline-success my-2 my-sm-0">Login</Link>
